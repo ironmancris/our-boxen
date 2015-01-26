@@ -21,15 +21,22 @@ def github(name, *args)
   end
 end
 
+def githubsource(name, options = nil)
+  options ||= {}
+  options[:repo] ||= "boxen/puppet-#{name}"
+  mod name, :git => "git://github.com/#{options[:repo]}.git"
+end
+
+
 # Shortcut for a module under development
 def dev(name, *args)
-  mod "puppet-#{name}", :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
+  mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
 end
 
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.10.1"
+github "boxen", "3.7.0"
 
 # Support for default hiera data in modules
 
@@ -38,13 +45,12 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "brewcask",    "0.0.4"
 github "dnsmasq",     "2.0.1"
 github "foreman",     "1.2.0"
 github "gcc",         "2.2.0"
 github "git",         "2.7.1"
 github "go",          "2.1.0"
-github "homebrew",    "1.11.2"
+github "homebrew",    "1.9.8"
 github "hub",         "1.3.0"
 github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",       "1.4.4"
@@ -60,3 +66,23 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+#general
+github "java",       "1.1.2"
+github "firefox",    "1.1.3"
+github "chrome",     "1.1.1"
+github "osx",        "2.7.0"
+github "iterm2",     "1.1.2"
+github "zsh",        "1.0.0"
+github "libreoffice","4.2.5" 
+github "textmate",   "1.1.0"
+#githubsource "sshuserconfig", :repo => "EugenMayer/boxen-sshuserconfig"
+
+#development
+github "imagemagick","1.2.1"
+github "mysql",      "1.1.3"
+github "redis",      "1.0.0"
+github "ohmyzsh",    "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
+github "wget",       "1.0.0"
+github "cyberduck",  "1.0.1"
+github "mongodb",    "2.6.1"
+github "brewcask",   "0.0.5"

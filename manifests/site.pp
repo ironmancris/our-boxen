@@ -37,7 +37,7 @@ Package {
 Repository {
   provider => git,
   extra    => [
-    '--recurse-submodules'
+    '--recurse-submodules --recursive'
   ],
   require  => File["${boxen::config::bindir}/boxen-git-credential"],
   config   => {
@@ -80,12 +80,22 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'rbenv-gemset',
+      'coreutils',
+      'tree',
     ]:
+  }
+
+  class { 'nodejs::global':
+    version => 'v0.10'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  #include organization defaults
+  include phybbit::environment
 }
