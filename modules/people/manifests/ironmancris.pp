@@ -26,26 +26,26 @@ class people::ironmancris {
   include osx::dock::dim_hidden_apps
 
   #here I have to create a custom class for karabiner to import settings from user-config
-  #include karabiner
+  include karabiner
 
-  include flux
+  #include flux
   include ohmyzsh
   include iterm2::colors::solarized_dark
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
-  include skype
-  include alfred
-  include dropbox
-  include sourcetree
-  include caffeine
-  include tmux
-  include dterm
-  include vlc
-  class { 'vlc': 
-    version => '2.1.4'
-  }
+  #include skype
+  #include alfred
+  #include dropbox
+  #include sourcetree
+  #include caffeine
+  #include tmux
+  #include dterm
+  #include vlc
+  #class { 'vlc': 
+  #  version => '2.1.4'
+  #}
 
   #my home config
   repository { $dotfiles_dir:
