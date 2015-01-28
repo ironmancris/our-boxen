@@ -31,10 +31,10 @@ class people::ironmancris {
   #include flux
   include ohmyzsh
   include iterm2::colors::solarized_dark
-  include sublime_text
-  sublime_text::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
-  }
+  #include sublime_text
+  #sublime_text::package { 'Emmet':
+  #  source => 'sergeche/emmet-sublime'
+  #}
   #include skype
   #include alfred
   #include dropbox
