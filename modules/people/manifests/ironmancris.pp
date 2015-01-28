@@ -26,7 +26,8 @@ class people::ironmancris {
   include osx::dock::dim_hidden_apps
 
   #here I have to create a custom class for karabiner to import settings from user-config
-  include karabiner
+  #include karabiner
+
   include flux
   include ohmyzsh
   include iterm2::colors::solarized_dark
