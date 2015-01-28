@@ -87,3 +87,6 @@ github "cyberduck",  "1.0.1"
 github "mongodb",    "2.6.1"
 github "brewcask",   "0.0.5"
 
+#customization
+github "karabiner",  "10.6.0", :repo => "boxen/puppet-karabiner"
+github "flux",       :repo => "boxen/puppet-flux"
