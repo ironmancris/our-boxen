@@ -88,5 +88,5 @@ github "mongodb",    "2.6.1"
 github "brewcask",   "0.0.5"
 
 #customization
-github "karabiner",  "10.0.6", :repo => "boxen/puppet-karabiner"
+github "karabiner",  "1.0.6", :repo => "boxen/puppet-karabiner"
 #github "flux",       :repo => "boxen/puppet-flux"
