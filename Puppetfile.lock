@@ -74,6 +74,11 @@ GITHUBTARBALL
     java (1.1.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-karabiner
+  specs:
+    karabiner (1.0.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-libreoffice
   specs:
     libreoffice (4.2.5)
@@ -195,6 +200,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (= 1.1.2)
   java (= 1.1.2)
+  karabiner (= 1.0.6)
   libreoffice (= 4.2.5)
   module_data (= 0.0.3)
   mongodb (= 2.6.1)

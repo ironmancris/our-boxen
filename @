@@ -91,6 +91,7 @@ github "mongodb",    "2.6.1"
 github "brewcask",   "0.0.5"
 github "sourcetree", "1.0.0", :repo => "boxen/puppet-sourcetree"
 github "tmux",       "1.0.2", :repo => "boxen/puppet-tmux"
+github "vlc",        "1.1.0", :repo => "boxen/puppet-vlc"
 
 #customization
 github "karabiner",  "1.0.6", :repo => "boxen/puppet-karabiner"
@@ -105,5 +106,4 @@ github "skype",  "1.1.0", :repo => "boxen/puppet-skype"
 github "dropbox",  "1.4.1", :repo => "boxen/puppet-dropbox"
 
 #multimedia
-github "vlc",        "1.1.0", :repo => "boxen/puppet-vlc"
 
