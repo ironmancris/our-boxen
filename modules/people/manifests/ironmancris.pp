@@ -29,7 +29,7 @@ class people::ironmancris {
   include karabiner
 
   include flux
-  include ohmyzsh
+  #include ohmyzsh
   include iterm2::colors::solarized_dark
   include sublime_text
   sublime_text::package { 'Emmet':
