@@ -1,0 +1,3 @@
+#change the source repository for ohmyzsh
+boxen::ohmyzsh::repository:
+  source: ironmancris/oh-my-zsh
